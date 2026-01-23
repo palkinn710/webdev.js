@@ -10,15 +10,39 @@
 
 // console.log("new code")
 
-let a=123456
-var b=675899
-console.log(a)
-console.log(b)
-function print(){
-    console.log("inside function")
+// let a=123456
+// var b=675899
+// console.log(a)
+// console.log(b)
+// function print(){
+//     console.log("inside function")
 
+
+// }
+// print()    
+// global context starts from thr first and while ending the fiunction it starts closing from the last function.
+function first(){
+     second()
+}
+function second(){
+    third()
+}
+function third(){
+    console.trace()
 
 }
-print()
+first()
+ function infinte(){
+    infinte()
+ }
+
+ let total=40
+ 
+ function calculate(){
+    console.log(total)
+    let total=100
+ }
+ calculate()
+
 
 
