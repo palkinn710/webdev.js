@@ -48,4 +48,6 @@ first()
  calculate()
 
 
-
+console.log("first line")
+selftimeout(()=> {console.log("after 5 sec")} , 5000)
+console.log("second line")
