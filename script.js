@@ -26,28 +26,39 @@ function first(){
 }
 
 
-// edit
-function second(){
-    third()
-}
-function third(){
-    console.trace()
+// // edit
+// function second(){
+//     third()
+// }
+// function third(){
+//     console.trace()
 
-}
-first()
- function infinte(){
-    infinte()
- }
+// }
+// first()
+//  function infinte(){
+//     infinte()
+//  }
 
- let total=40
+//  let total=40
  
- function calculate(){
-    console.log(total)
-    let total=100
- }
- calculate()
+//  function calculate(){
+//     console.log(total)
+//     let total=100
+//  }
+//  calculate()
 
 
-console.log("first line")
-selftimeout(()=> {console.log("after 5 sec")} , 5000)
-console.log("second line")
+// console.log("first line")
+// selftimeout(()=> {console.log("after 5 sec")} , 5000)
+// console.log("second line")
+
+// timers
+setTimeout(()=>{
+    console.log("after 5 secs")
+},2*1000)
+ const timerid= setInterval(()=>{console.log("setInterval")},1000)
+ setTimeout(()=>{clearInterval(timerid) , 1000})
+//  take a var with starting val 1 and it will print value updated +1 eveytime and when it reaches 10 it should stop printing 
+
+var count=1;
+while var1=
