@@ -59,8 +59,8 @@
 //  const timeridd= setInterval(()=>{console.log("setInterval")},1000)
 //  setTimeout(()=>{clearInterval(timerid) , 1000})
 //  take a var with starting val 1 and it will print value updated +1 eveytime and when it reaches 10 it should stop printing 
-console.log("hello world")
-console.log("hello world")
+// console.log("hello world")
+// console.log("hello world")
 // var count=1;
 // const timerid= setInterval(()=>{console.log(count)
 // count++}
@@ -72,21 +72,40 @@ console.log("hello world")
 //         console.log(num)
 //     num+=1
 // },1000)
-const name=document.queryselector("#name")
-const btn=document.querySelector(".btn")
-const list=document.queryselector(".list")
-btn.addEventListener('click' ,()=>{
-    const li=document.createlement('li')
-    const dlt=document.createElement('button')
-    dlt.innertext="delete"
-    li.innertext=name.value;
-    dlt.addEventListener("click",()=>{
-        list.removechild(li)
-    })
-    list.appendchild(dlt)
-    list.appendchild(li)
-    name.value=""
+// const name=document.queryselector("#name")
+// const btn=document.querySelector(".btn")
+// const list=document.queryselector(".list")
+// btn.addEventListener('click' ,()=>{
+//     if(name.value===""){
+//         alert("enter your name!!")
+//         return;
+//     }
+//     const li=document.createlement('li')
+//     const dlt=document.createElement('button')
+//     dlt.innertext="delete"
+//     li.innertext=name.value;
+//     dlt.addEventListener("click",()=>{
+//         list.removechild(li)
+//     })
+//     list.appendchild(dlt)
+//     list.appendchild(li)
+//     name.value=""
 
-})
+// })
+console.log("first line")
+setTimeout(() => {console.log("after 2 secs")},2000)
+console.log("second line")
+
+function print(num){
+    console.log("inside print")
+    num()
+}
+function callback(){
+    console.log("inside callback")
+}
+print(callback)
+
+
+
 
 
