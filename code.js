@@ -150,25 +150,61 @@
 //         }, 1000)
 //     }, 1500)
 // },2000)
+// console.log("before promise")
+// const p=new Promise((resolve,reject) =>{
+//     let done=true;
+//     setTimeout(() =>{
+//         if(done){
+//             resolve("work has been completed")
+//         }else{
+//             reject("work has not been completed")
+//         }
+//     },5000)
+// })
+// console.log(p)
 
-const p=new Promise((resolve,reject) =>{
-    let done=true;
-    setTimeout(() =>{
-        if(done){
-            resolve("work has been completed")
-        }else{
-            reject("work has not been completed")
-        }
-    },5000)
+// })
+// p.then((data)=>{
+//     console.log(data)
+// }).catch((err)=>{
+//     console.log(err)
+// }).finally(()=>{
+//     console.log("finally block")
+// })
+// console.log("after promise")
 
-})
-p.then((data)=>{
-    console.log(data)
-}).catch((err)=>{
-    console.log(err)
-}).finally(()=>{
-    console.log("finally block")
-})
+// function dohomework(){
+//     const p=new Promise((res, rej) =>{
+        // let done= true;
+        // setTimeout(()=>{
+        //     if(done){
+        //         console.log("homework completed")
+        //         res("homework is done")
+        //     }else{
+        //         rej("homework not completed")
+        //     },2000)
+        // })
+        // return p
+
+
+
+//     }
+function gotoplayground(){
+    const p=new Promise((res,rej) =>{
+         let done= true;
+        setTimeout(()=>{
+            if(done){
+                console.log("go to playground")
+                res("play badminton if available")
+            }else{
+                rej("play not if not available")
+            },2000)
+        })
+        return p
+}
+
+    
+
 
 
 
