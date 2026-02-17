@@ -186,30 +186,22 @@
         // })
         // return p
 
+// function eatdinner(){
+//     const p=new Promise((res , rej)=>{
+//         let done=false;
+//         setTimeout(()=>{
+//             if(done){
+//                 console.log("dinner completed")
+//                 res("dinner is done")
+//             }else{
+//                 rej("dinner not completed")
+//             }
+//         },2000)
+//     })}
+//     return p
 
+//  error handling
 
-//     }
-function gotoplayground(){
-    const p=new Promise((res,rej) =>{
-         let done= true;
-        setTimeout(()=>{
-            if(done){
-                console.log("go to playground")
-                res("play badminton if available")
-            }else{
-                rej("play not if not available")
-            },2000)
-        })
-        return p
-}
-
-    
-
-
-
-
-
-
-
-
-      
+   console.log("first line")
+   console.log("sample")
+   console.log("second line")
