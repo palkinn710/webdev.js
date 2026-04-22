@@ -92,18 +92,34 @@
 //     name.value=""
 
 // })
-console.log("first line")
-setTimeout(() => {console.log("after 2 secs")},2000)
-console.log("second line")
+// console.log("first line")
+// setTimeout(() => {console.log("after 2 secs")},2000)
+// console.log("second line")
 
-function print(num){
-    console.log("inside print")
-    num()
-}
-function callback(){
-    console.log("inside callback")
-}
-print(callback)
+// function print(num){
+//     console.log("inside print")
+//     num()
+// }
+// function callback(){
+//     console.log("inside callback")
+// }
+// print(callback)
+// function print(){
+//     setTimeout(() => {
+//         console.log("inside print")
+//         Num()
+    
+        
+//     }, 2000);
+//     function samople(){ //callback function
+//         console.log ('inside function')
+
+//     }
+//     print(sample)
+
+
+
+
 
 
 
