@@ -132,4 +132,7 @@ const Button=styled.button`
     width: 100px;
     height: 30px;
     border-radius: 10px;
+
+
+    
   `
